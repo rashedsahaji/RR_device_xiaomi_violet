@@ -17,7 +17,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -383,9 +383,9 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.sm6150
 
-# ThermalController app
+# Trust HAL
 PRODUCT_PACKAGES += \
-    ThermalController
+  vendor.lineage.trust@1.0-service
 
 # Touchscreen
 PRODUCT_PACKAGES += \
@@ -394,10 +394,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    WallpapersBReel2018
 
 # Wifi
 PRODUCT_PACKAGES += \

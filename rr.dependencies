@@ -1,0 +1,20 @@
+[
+  {
+    "remote":      "github",
+    "repository": "PixelExperience-Devices/kernel_xiaomi_sm6150",
+    "target_path": "kernel/xiaomi/sm6150",
+    "branch":      "pie"
+  },
+  {
+    "remote":      "github",
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch":      "lineage-16.0"
+  },
+  {
+    "remote":      "github",
+    "repository": "ResurrectionRemix-Devices/vendor_xiaomi_violet",
+    "target_path": "vendor/xiaomi/violet",
+    "branch":      "pie"
+  }
+]
