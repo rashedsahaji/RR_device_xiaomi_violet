@@ -379,10 +379,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.sm6150
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-  vendor.lineage.trust@1.0-service
-
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
