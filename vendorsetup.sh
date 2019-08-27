@@ -1,1 +1,2 @@
-add_lunch_combo aosip_violet-userdebug
+export SKIP_ABI_CHECKS=true
+add_lunch_combo syberia_violet-userdebug
