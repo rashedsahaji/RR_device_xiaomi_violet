@@ -1,1 +1,1 @@
-add_lunch_combo aosip_violet-userdebug
+add_lunch_combo xtended_violet-userdebug

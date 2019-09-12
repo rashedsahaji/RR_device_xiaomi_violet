@@ -14,18 +14,14 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common PixelExperience stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
-# Gapps
-$(call inherit-product-if-exists, vendor/gapps/config.mk)
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-
-# PixelStyle
-$(call inherit-product-if-exists, vendor/pixelstyle/config.mk)
+# Inherit APN info from device
+PRODUCT_COPY_FILES += \
+    device/xiaomi/whyred/configs/apns-conf.xml:system/etc/apns-conf.xml
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosip_violet
+PRODUCT_NAME := xtended_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
